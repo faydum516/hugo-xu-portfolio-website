@@ -1,0 +1,99 @@
+// Styling the skill-swiper
+$align: center;
+$sectionWidth: 475px;
+$padding: 10px 55px 35px 55px;
+
+// Styling the titles
+$titleMargin: 7.5px 0;
+$titleSize: 1.125em;
+
+// Styling the skillsets
+$ensembleDisplay: grid;
+$gridColumns: 1fr 1fr 1fr;
+$gridRows: 1fr 1fr;
+$gap: 20px;
+$softwareSkillSetPadding: 20px;
+$softwareSkillSetMaxHeight: 160px;
+
+// Styling the skillset scrollbar
+$scrollBarBackground: #0000008a;
+$scrollRadius: 10px;
+$scrollThumbWidth: 6px;
+
+// Styling the skill icons
+$fontSize: 2.25em;
+
+// Styling the skill names
+$fontWeight: 600;
+
+@mixin softwareSkillSwiper {
+    width: $sectionWidth;
+    text-align: $align;
+}
+
+@mixin softwareSkillSet {
+    display: $ensembleDisplay;
+    grid-template-columns: $gridColumns;
+    grid-template-rows: $gridRows;
+    gap: $gap;
+    max-height: $softwareSkillSetMaxHeight;
+    padding: $softwareSkillSetPadding;
+    overflow-y: auto;
+}
+
+@mixin softwareSkillSetScrollThumb {
+    background: $scrollBarBackground; 
+    border-radius: $scrollRadius;
+}
+
+.software-skill-swiper {
+    @include softwareSkillSwiper;
+        
+    .software-skill-type {
+        padding: $padding;
+    
+        .software-skill-title {
+            margin: $titleMargin;
+            font-size: $titleSize;
+        }
+        .software-skills {
+            @include softwareSkillSet;
+            
+            .software-skill-icon {
+                font-size: $fontSize;
+            }
+            .software-skill-name {
+                font-weight: $fontWeight;
+            }
+        }
+        .software-skills::-webkit-scrollbar {
+            width: $scrollThumbWidth;
+        }
+        .software-skills::-webkit-scrollbar-thumb {
+            @include softwareSkillSetScrollThumb;
+        } 
+    }
+}
+
+@media screen and (max-width: 800px) {
+    $sectionWidth: 390px;
+    $softwareSkillSetMaxHeight: 120px;
+    $softwareSkillSetPadding: 12.5px 7.5px;
+    $gap: 10px;
+    $scrollThumbWidth: 5px;
+
+    .software-skill-swiper {
+        width: $sectionWidth;
+
+        .software-skill-type {
+            .software-skills {
+                padding: $softwareSkillSetPadding;
+                gap: $gap;
+                max-height: $softwareSkillSetMaxHeight;
+            } 
+            .software-skills::-webkit-scrollbar {
+                width: $scrollThumbWidth;
+            }
+        }
+    }
+}

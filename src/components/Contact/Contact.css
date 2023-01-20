@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap");
+.contact-section {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.contact-piece, .piece-icon {
+  display: flex;
+  align-items: center;
+}
+
+.contact-piece {
+  margin: 10px 0;
+}
+
+.piece-icon {
+  font-size: 1.5em;
+}
+
+.piece-info {
+  font-size: 1.1875em;
+  text-indent: 10px;
+}/*# sourceMappingURL=Contact.css.map */

@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
+.Header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #616161;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Header .Header-Logo-And-Menu-Click {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Header .Header-Logo-And-Menu-Click .Header-Logo {
+  position: relative;
+  border: 2px solid #000000;
+  text-align: center;
+  width: 185px;
+}
+.Header .Header-Logo-And-Menu-Click .Header-Logo .Header-Name {
+  padding: 7.5px 40px;
+  font-family: "Goldman", cursive;
+}
+.Header .Header-Logo-And-Menu-Click .Header-Logo .Header-Website-Type {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  font-family: "Goldman", cursive;
+  font-size: 0.5em;
+  background-color: #616161;
+  padding: 0 0.5em;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  -o-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+}
+.Header .Header-Logo-And-Menu-Click .Menu-Click {
+  display: none;
+  font-size: 2em;
+  transition: color 0.25s linear 0.1s;
+}
+.Header .Header-Logo-And-Menu-Click .Menu-Click:hover {
+  cursor: pointer;
+  color: #303030;
+}
+.Header .Navbar .Menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-weight: 700;
+}
+.Header .Navbar .Menu .Nav-Link {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: color 0.25s linear 0.1s;
+}
+.Header .Navbar .Menu .Nav-Link:hover {
+  color: hsl(0deg, 0%, 81%);
+}
+
+@media screen and (max-width: 800px) {
+  .Header {
+    padding: 0;
+    justify-content: center;
+    flex-direction: column;
+    background-color: transparent;
+  }
+  .Header .Header-Logo-And-Menu-Click {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #616161;
+  }
+  .Header .Header-Logo-And-Menu-Click .Header-Logo {
+    margin-left: 0.875em;
+  }
+  .Header .Header-Logo-And-Menu-Click .Menu-Click {
+    display: block;
+    margin-right: 0.625em;
+  }
+  .Header .Navbar {
+    padding: 10px 0;
+    width: 100%;
+    background-color: #616161;
+  }
+  .Header .Navbar .Menu {
+    margin-left: 10px;
+    flex-direction: column;
+    gap: 0;
+  }
+  .Header .Backup {
+    transform: translate(0, -100%);
+  }
+  .Header .Dropdown {
+    transform: translate(0, 0);
+    transition: transform 0.2s linear;
+  }
+}/*# sourceMappingURL=Header.css.map */

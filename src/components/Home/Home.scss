@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&family=Satisfy&display=swap');
+
+// General styling
+$flexDisplay: flex;
+$columnFlex: column;
+$centerJustifyAlign: center;
+$gap: 30px;
+
+// Styling the home section
+$homeMargin: 0 10px;
+$homeMinWidth: 475px;
+$photoHeight: 280px;
+$homeIntroDownloadPadding: 20px 0;
+$satisfyFontFamily: 'Satisfy', cursive;
+$bigFontSize: 2em;
+$nameFontFamily: 'Goldman', cursive;
+$nameFontSize: 3em;
+
+.Home {
+    display: $flexDisplay;
+    align-items: $centerJustifyAlign;
+    gap: $gap;
+    min-width: $homeMinWidth;
+    margin: $homeMargin;
+
+    .Profile-Photo {
+        height: $photoHeight;
+    }
+    .Home-Intro-Download {
+        display: $flexDisplay;
+        flex-direction: $columnFlex;
+        gap: 40px;
+        padding: $homeIntroDownloadPadding;
+
+        .Home-Intro {
+            display: $flexDisplay;
+            flex-direction: $columnFlex;
+            gap: $gap;
+            
+            .hello {
+                font-family: $satisfyFontFamily;
+                font-size: $bigFontSize;
+            }
+            .big-name {
+                font-family: $nameFontFamily;
+                font-size: $nameFontSize;
+            }
+            .occupation {
+                font-family: $satisfyFontFamily;
+                font-size: $bigFontSize;
+            }
+        }
+        .download-button {
+            padding: 5px;
+            background-color: #123091;
+            border-radius: 7.5px;
+            border: 0;
+            cursor: pointer;
+
+            .CV-Download {
+                text-decoration: none;
+                color: #ffffff;
+                font-weight: 600;
+                display: $flexDisplay;
+                justify-content: $centerJustifyAlign;
+                align-items: $centerJustifyAlign;
+                gap: 5px;
+            }
+        }
+        .download-button:hover {
+            background-color: #183aac;            
+        }
+        .download-button:active {
+            background-color: #224acc;
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+    $photoHeight: 245px;
+    $homeIntroDownloadPadding: 10px 0;
+
+    .Home {
+        font-size: 0.875em;
+
+        .Profile-Photo {
+            height: $photoHeight;
+        }
+    }
+}

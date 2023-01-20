@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Goldman&family=Satisfy&display=swap");
+.Home {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  min-width: 475px;
+  margin: 0 10px;
+}
+.Home .Profile-Photo {
+  height: 280px;
+}
+.Home .Home-Intro-Download {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px 0;
+}
+.Home .Home-Intro-Download .Home-Intro {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.Home .Home-Intro-Download .Home-Intro .hello {
+  font-family: "Satisfy", cursive;
+  font-size: 2em;
+}
+.Home .Home-Intro-Download .Home-Intro .big-name {
+  font-family: "Goldman", cursive;
+  font-size: 3em;
+}
+.Home .Home-Intro-Download .Home-Intro .occupation {
+  font-family: "Satisfy", cursive;
+  font-size: 2em;
+}
+.Home .Home-Intro-Download .download-button {
+  padding: 5px;
+  background-color: #123091;
+  border-radius: 7.5px;
+  border: 0;
+  cursor: pointer;
+}
+.Home .Home-Intro-Download .download-button .CV-Download {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.Home .Home-Intro-Download .download-button:hover {
+  background-color: #183aac;
+}
+.Home .Home-Intro-Download .download-button:active {
+  background-color: #224acc;
+}
+
+@media screen and (max-width: 800px) {
+  .Home {
+    font-size: 0.875em;
+  }
+  .Home .Profile-Photo {
+    height: 245px;
+  }
+}/*# sourceMappingURL=Home.css.map */

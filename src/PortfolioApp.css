@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap");
+
+.main-content, .home-section {
+    display: flex;
+    align-items: center;
+}
+
+.main-content {
+    padding: 30px 0 50px 0;
+    flex-direction: column;
+    font-family: 'Red Hat Display', sans-serif;
+    animation: transitionIn 0.75s;
+}
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.home-section {
+    justify-content: center;
+    height: 100vh;
+}
+.content-section {
+    padding-top: 70px;
+}
+.component-scroll {
+    display: flex;
+    max-width: 780px;
+    overflow-x: auto;
+}
+.component-scroll::-webkit-scrollbar {
+    height: 6px;
+}
+.component-scroll::-webkit-scrollbar-thumb {
+    background: #0000008a;
+    border-radius: 10px;
+}
+.component-scroll::-webkit-scrollbar-thumb:hover {
+    background: #1a1a1a8a;
+}
+
+@media screen and (max-width: 800px) {
+    .content-section h2 {
+        font-size: 1.375em;
+    }
+    .component-scroll {
+        max-width: 350px;
+        font-size: 0.875em;
+    }
+}

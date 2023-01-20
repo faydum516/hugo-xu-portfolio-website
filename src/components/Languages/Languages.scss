@@ -1,0 +1,68 @@
+// General styling
+$flexDisplay: flex;
+
+// Styling the languages
+$sectionWidth: 460px;
+$columnFlex: column;
+
+// Styling the language-proficiency part
+$spaceJustify: space-between;
+
+// Styling the fluency bars
+$fluencyBarPosition: relative;
+$fluencyBarHeight: 8.75px;
+$fluencyBarWidth: 100%;
+$fluencyBarBackgroundColor: #717171;
+
+// Styling the fluency 
+@mixin fluencyPosition {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+$fluencyBackgroundColor: #13649C;
+$fluencyHeight: 100%;
+
+.language-list {
+    width: $sectionWidth;
+    display: $flexDisplay;
+    flex-direction: $columnFlex;
+    padding: 25px 7.5px;
+    gap: 30px;
+
+    .language-proficiency {
+        display: $flexDisplay;
+        justify-content: $spaceJustify;
+        margin-bottom: 5px;
+        font-weight: 600;
+        font-size: 1.0625em;
+    }
+
+    .fluency-bar, .fluency {
+        border-radius: 10px;
+    }
+
+    .fluency-bar {
+        position: $fluencyBarPosition;
+        height: $fluencyBarHeight;
+        width: $fluencyBarWidth;
+        background-color: $fluencyBarBackgroundColor;
+        
+
+        .fluency {
+            @include fluencyPosition;
+            background-color: $fluencyBackgroundColor;
+            height: $fluencyHeight;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    $sectionWidth: 375px;
+
+    .language-list {
+        width: $sectionWidth;
+        padding: 14px 7.5px;
+        gap: 25px;
+    }
+}

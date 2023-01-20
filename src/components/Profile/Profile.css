@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap");
+.Profile {
+  font-family: "Red Hat Display", sans-serif;
+  width: 750px;
+}
+
+@media screen and (max-width: 800px) {
+  .Profile {
+    width: 650px;
+  }
+}/*# sourceMappingURL=Profile.css.map */

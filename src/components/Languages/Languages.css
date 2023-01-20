@@ -1,0 +1,38 @@
+.language-list {
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 7.5px;
+  gap: 30px;
+}
+.language-list .language-proficiency {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 1.0625em;
+}
+.language-list .fluency-bar, .language-list .fluency {
+  border-radius: 10px;
+}
+.language-list .fluency-bar {
+  position: relative;
+  height: 8.75px;
+  width: 100%;
+  background-color: #717171;
+}
+.language-list .fluency-bar .fluency {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #13649C;
+  height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .language-list {
+    width: 375px;
+    padding: 14px 7.5px;
+    gap: 25px;
+  }
+}/*# sourceMappingURL=Languages.css.map */

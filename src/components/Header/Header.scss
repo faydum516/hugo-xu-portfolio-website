@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
+// General styling
+$flexDisplay: flex;
+$spaceJustify: space-around;
+$left-right-margin: 0 10px; 
+$backgroundColor: #616161;
+
+// Styling the header
+$fixedPosition: fixed;
+$fullWidth: 100%;
+$padding: 10px 0;
+$headerDisplay: $flexDisplay;
+$headerAlign: center;
+$headerJustify: $spaceJustify;
+
+// Styling the header logo
+$logoPosition: relative;
+$logoAlign: center;
+$logoBorder: 2px solid #000000;
+$logoFontFamily: 'Goldman', cursive;
+$logoPadding: 7.5px 40px;
+$subLogoPosition: absolute;
+$subLogoLeft: 50%;
+$subLogoBottom: 0;
+$subPixels: 0.5em;
+$subPadding: 0 2.5px;
+$translate: translate(-50%, 50%);
+
+// Styling the menu click
+$menuButtonDisplay: none;
+
+// Styling the navigation menu
+$listStyle: none;
+$menuDecoration: none;
+$navColor: #FFFFFF;
+$menuDisplay: flex;
+$menuGap: 20px;
+$fontWeight: 700;
+
+.Header {
+    position: $fixedPosition;
+    z-index: 2;
+    width: $fullWidth;
+    padding: $padding;
+    background-color: $backgroundColor; 
+    display: $headerDisplay;
+    justify-content: $headerJustify;
+    align-items: $headerAlign;
+
+    .Header-Logo-And-Menu-Click {
+        display: $flexDisplay;
+        justify-content: space-between;
+        align-items: $headerAlign;
+      
+        .Header-Logo {
+            position: $logoPosition;
+            border: $logoBorder;
+            text-align: $logoAlign;
+            width: 185px;
+
+            .Header-Name {
+                padding: $logoPadding;
+                font-family: $logoFontFamily;
+            }
+            .Header-Website-Type {
+                position: $subLogoPosition;
+                left: $subLogoLeft;
+                bottom: $subLogoBottom;
+                font-family: $logoFontFamily;
+                font-size: $subPixels;
+                background-color: $backgroundColor;
+                padding: 0 $subPixels;
+                transform: $translate;
+                -webkit-transform: $translate;
+                -o-transform: $translate;
+                -moz-transform: $translate;
+            }
+        }  
+        .Menu-Click {
+            display: none;
+            font-size: 2em;
+            -webkit-transition: color 0.25s linear 0.1s;
+            -o-transition: color 0.25s linear 0.1s;
+            -moz-transition: color 0.25s linear 0.1s;
+            transition: color 0.25s linear 0.1s;
+        }
+        .Menu-Click:hover {
+            cursor: pointer;
+            color: #303030;
+        }
+    }
+
+    .Navbar {
+        .Menu {
+            list-style: $listStyle;
+            display: $menuDisplay;
+            gap: $menuGap;
+            font-weight: $fontWeight;
+
+            .Nav-Link {
+                text-decoration: $menuDecoration;
+                color: $navColor;
+                -webkit-transition: color 0.25s linear 0.1s;
+                -o-transition: color 0.25s linear 0.1s;
+                -moz-transition: color 0.25s linear 0.1s;
+                transition: color 0.25s linear 0.1s;
+            }
+
+            .Nav-Link:hover {
+                color: hsl(0, 0%, 81%);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Header {
+        $padding: 0;
+        padding: $padding;
+        justify-content: center;
+        flex-direction: column;   
+        background-color: transparent; 
+
+        .Header-Logo-And-Menu-Click {    
+            position: relative;
+            z-index: 1;      
+            width: $fullWidth;
+            padding: 10px 0;
+            background-color: $backgroundColor;
+            
+            .Header-Logo {
+                margin-left: 0.875em;
+            }
+            .Menu-Click {
+                display: block;
+                margin-right: 0.625em;
+            }
+        }
+        .Navbar {
+            padding: 10px 0;
+            width: 100%;
+            background-color: $backgroundColor;
+            
+
+            .Menu {
+                margin-left: 10px;
+                $menuGap: 0;
+                flex-direction: column;
+                gap: $menuGap;
+            }
+        }
+        .Backup {
+            transform: translate(0, -100%);
+        }
+        .Dropdown {
+            transform: translate(0, 0);
+            transition: transform 0.2s linear;
+        }
+
+    } 
+}

@@ -1,0 +1,47 @@
+.software-skill-swiper {
+  width: 475px;
+  text-align: center;
+}
+.software-skill-swiper .software-skill-type {
+  padding: 10px 55px 35px 55px;
+}
+.software-skill-swiper .software-skill-type .software-skill-title {
+  margin: 7.5px 0;
+  font-size: 1.125em;
+}
+.software-skill-swiper .software-skill-type .software-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  max-height: 160px;
+  padding: 20px;
+  overflow-y: auto;
+}
+.software-skill-swiper .software-skill-type .software-skills .software-skill-icon {
+  font-size: 2.25em;
+}
+.software-skill-swiper .software-skill-type .software-skills .software-skill-name {
+  font-weight: 600;
+}
+.software-skill-swiper .software-skill-type .software-skills::-webkit-scrollbar {
+  width: 6px;
+}
+.software-skill-swiper .software-skill-type .software-skills::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5411764706);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .software-skill-swiper {
+    width: 390px;
+  }
+  .software-skill-swiper .software-skill-type .software-skills {
+    padding: 12.5px 7.5px;
+    gap: 10px;
+    max-height: 120px;
+  }
+  .software-skill-swiper .software-skill-type .software-skills::-webkit-scrollbar {
+    width: 5px;
+  }
+}/*# sourceMappingURL=SoftwareSkills.css.map */

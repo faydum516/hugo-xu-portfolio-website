@@ -1,0 +1,43 @@
+// General styling
+$flexDisplay: flex;
+$spaceJustify: space-between;
+
+// Styling the education section
+$educationSectionWidth: 750px;
+$columnFlex: column;
+
+// Styling the sub-info list items
+$indent: 60px;
+$subInfoWidth: 450px;
+
+.education-information {
+    width: $educationSectionWidth;
+    display: $flexDisplay;
+    flex-direction: $columnFlex;
+    gap: 30px;
+
+    .institution-location {
+        display: $flexDisplay;
+        justify-content: $spaceJustify
+    }
+    .subInfo {
+        width: $subInfoWidth;
+        margin-left: $indent;
+    }
+    .diploma-period {
+        @extend .institution-location;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    $educationSectionWidth: 650px;
+    $subInfoWidth: 350px;
+
+    .education-information {
+        width: $educationSectionWidth;
+
+        .subInfo {
+            width: $subInfoWidth;
+        }
+    }
+}

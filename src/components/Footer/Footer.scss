@@ -1,0 +1,93 @@
+// General styling 
+$flexDisplay: flex;
+$columnFlex: column;
+$color: #FFFFFF;
+$sectionGap: 20px;
+$sectionPadding: 10px 0;
+
+// Styling the footer
+$footerColor: #3f3f3f;
+$footerWidth: 100%;
+$footerDisplay: $flexDisplay;
+$footerCenter: center;
+$footerPadding: 20px 0 30px 0;
+$footerGap: 200px;
+
+// Styling the social icons
+$iconFontSize: 2em;
+$iconGap: 10px;
+$iconColor: #FFFFFF;
+$iconDecoration: none;
+
+// Styling the overview links
+$overviewDecoration: none;
+$overviewColor: #FFFFFF;
+
+.Footer {
+    color: $color;
+    background-color: $footerColor;
+    width: $footerWidth;
+    display: $footerDisplay;
+    justify-content: $footerCenter;
+    padding: $footerPadding;
+    gap: $footerGap;
+
+    .contact-me, .overview-and-follow-me {
+        display: $flexDisplay;
+        flex-direction: $columnFlex;
+    }
+
+    .overview-and-follow-me {
+        gap: $sectionGap;
+
+        .overview {
+            padding: $sectionPadding;
+
+            .overview-link {
+                text-decoration: $overviewDecoration;
+                color: $overviewColor;
+                -webkit-transition: color 0.25s linear 0.1s;
+                -o-transition: color 0.25s linear 0.1s;
+                -moz-transition: color 0.25s linear 0.1s;
+                transition: color 0.25s linear 0.1s;
+            }
+            .overview-link:hover {
+                color: hsl(0, 0%, 81%);
+            }
+        }
+
+        .social-icons {
+            font-size: $iconFontSize;
+            display: $flexDisplay;
+            gap: $iconGap;
+            padding: $sectionPadding;
+
+            .social-icon {
+                color: $iconColor;
+                text-decoration: $iconDecoration;
+                -webkit-transition: color 0.25s linear 0.1s;
+                -o-transition: color 0.25s linear 0.1s;
+                -moz-transition: color 0.25s linear 0.1s;
+                transition: color 0.25s linear 0.1s;
+            }
+            .social-icon:hover {
+                color: hsl(0, 0%, 81%);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    $footerGap: 40px;
+
+    .Footer {
+        font-size: 0.9em;
+        flex-direction: $columnFlex;
+        gap: $footerGap;
+        align-items: $footerCenter;
+
+        .contact-me, .overview-and-follow-me {
+            width: 350px;
+        }
+    }
+}

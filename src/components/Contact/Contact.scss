@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap");
+
+// General Styling
+$fontFamily: 'Red Hat Display', sans-serif;
+$fontSize1: 1.5em;
+$fontSize2: 1.1875em;
+$pieceDisplay: flex;
+$pieceAlign: center;
+$pieceMargin: 10px 0;
+$textIndent: 10px;
+
+@mixin pieceFlex {
+    display: $pieceDisplay;
+    align-items: $pieceAlign;
+}
+
+.contact-section {
+    font-family: $fontFamily;
+}  
+.contact-piece, .piece-icon {
+    @include pieceFlex;
+}
+.contact-piece {
+    margin: $pieceMargin;
+}
+.piece-icon {
+    font-size: $fontSize1;
+}
+.piece-info {
+    font-size: $fontSize2;
+    text-indent: $textIndent;
+}

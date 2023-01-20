@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap");
+
+// Styling the portfolio section 
+$gridDisplay: grid;
+$gridColumns: 1fr 1fr 1fr 1fr;
+$gridRows: 1fr 1fr 1fr 1fr;
+$gap: 30px;
+$fontFamily: "Red Hat Display", sans-serif;
+$fontWeight: 600;
+$textColor: #FFFFFF;
+
+// Styling the projects
+$sideLength: 165px;
+$width: $sideLength;
+$height: $sideLength;
+$fitMethod: cover;
+$nameAlign: center;
+$textDecoration: none;
+
+.portfolio-projects {
+    display: $gridDisplay;
+    grid-template-columns: $gridColumns;
+    grid-template-rows: $gridRows;
+    gap: $gap;
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+
+    .project-link {
+        text-decoration: $textDecoration;
+        color: $textColor;
+        -webkit-transition: color 0.25s linear 0.1s;
+        -o-transition: color 0.25s linear 0.1s;
+        -moz-transition: color 0.25s linear 0.1s;
+        transition: color 0.25s linear 0.1s;
+
+        .image, .name {
+            width: $width;
+        }   
+        .image {
+            height: $height;
+            object-fit: $fitMethod;
+        }  
+        .name {
+            text-align: $nameAlign;
+        }
+    }
+    .project-link:hover {
+        $textColor: #dddddd;
+        color: $textColor;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    $gap: 25px;
+    $sideLength: 100px;
+    $width: $sideLength;
+    $height: $sideLength;
+
+    .portfolio-projects {
+        gap: $gap;
+
+        .project-link {  
+            .image, .name {
+                width: $width;
+            }  
+            .image {
+                height: $height;
+            }
+        }
+    }
+}

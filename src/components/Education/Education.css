@@ -1,0 +1,22 @@
+.education-information {
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.education-information .institution-location, .education-information .diploma-period {
+  display: flex;
+  justify-content: space-between;
+}
+.education-information .subInfo {
+  width: 450px;
+  margin-left: 60px;
+}
+@media screen and (max-width: 800px) {
+  .education-information {
+    width: 650px;
+  }
+  .education-information .subInfo {
+    width: 350px;
+  }
+}/*# sourceMappingURL=Education.css.map */
