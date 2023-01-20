@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/hugo-xu-portfolio-website/static/css/main.1c299bd9.css",
+    "main.js": "/hugo-xu-portfolio-website/static/js/main.94d22d1e.js",
+    "static/js/787.56bc185a.chunk.js": "/hugo-xu-portfolio-website/static/js/787.56bc185a.chunk.js",
+    "static/media/pexels-david-bartus-963278.jpg": "/hugo-xu-portfolio-website/static/media/pexels-david-bartus-963278.d32e554d20f907b92dcd.jpg",
+    "static/media/pexels-steve-johnson-1789968.jpg": "/hugo-xu-portfolio-website/static/media/pexels-steve-johnson-1789968.91a30abe2f2d2239e6b1.jpg",
+    "static/media/pexels-jot-singh-2179483.jpg": "/hugo-xu-portfolio-website/static/media/pexels-jot-singh-2179483.3e76dde71c4cb9480a44.jpg",
+    "static/media/pexels-pixabay-268415.jpg": "/hugo-xu-portfolio-website/static/media/pexels-pixabay-268415.8602aa9d327f574bbffb.jpg",
+    "static/media/Photo Image Gallery.png": "/hugo-xu-portfolio-website/static/media/Photo Image Gallery.25bfd5e7ec6c5b34e21c.png",
+    "static/media/ProfilePhoto.jpg": "/hugo-xu-portfolio-website/static/media/ProfilePhoto.cd04823eb7d0e702b919.jpg",
+    "static/media/Survey Form.png": "/hugo-xu-portfolio-website/static/media/Survey Form.22ba10c950c25c4213f2.png",
+    "static/media/Video Gallery.png": "/hugo-xu-portfolio-website/static/media/Video Gallery.701e3599ef12a65e3483.png",
+    "static/media/Tribute Page.png": "/hugo-xu-portfolio-website/static/media/Tribute Page.04246c8087a111350b2b.png",
+    "static/media/Weather Feather.png": "/hugo-xu-portfolio-website/static/media/Weather Feather.7a606c5d0a00e8d26dd9.png",
+    "static/media/Geographical Map.png": "/hugo-xu-portfolio-website/static/media/Geographical Map.34290ddd9e1f6eee1bbd.png",
+    "static/media/Quiz Your Knowledge.png": "/hugo-xu-portfolio-website/static/media/Quiz Your Knowledge.1ca8c31ee37f2edd823f.png",
+    "static/media/Wing Chun TD Page.png": "/hugo-xu-portfolio-website/static/media/Wing Chun TD Page.b6c56f84d59ad43b3612.png",
+    "static/media/Music Player.png": "/hugo-xu-portfolio-website/static/media/Music Player.303732c67a513a46894a.png",
+    "static/media/Curriculum Vitae.pdf": "/hugo-xu-portfolio-website/static/media/Curriculum Vitae.dd1805cf238a5d446959.pdf",
+    "static/media/Product Landing Page.png": "/hugo-xu-portfolio-website/static/media/Product Landing Page.b1577cf9067c73224415.png",
+    "static/media/Signup-Login Form.png": "/hugo-xu-portfolio-website/static/media/Signup-Login Form.0c4047b103e4a24ed961.png",
+    "static/media/Calculator.png": "/hugo-xu-portfolio-website/static/media/Calculator.fef4e942467dd9873895.png",
+    "index.html": "/hugo-xu-portfolio-website/index.html",
+    "main.1c299bd9.css.map": "/hugo-xu-portfolio-website/static/css/main.1c299bd9.css.map",
+    "main.94d22d1e.js.map": "/hugo-xu-portfolio-website/static/js/main.94d22d1e.js.map",
+    "787.56bc185a.chunk.js.map": "/hugo-xu-portfolio-website/static/js/787.56bc185a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c299bd9.css",
+    "static/js/main.94d22d1e.js"
+  ]
+}
